@@ -1,11 +1,94 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
 body{
 	background-color: #FFFFFF;
 }
 
 header{
-
+	background-image: linear-gradient(to right, #5e2ced, #9e7dfc);
+	height: 100vh;
+	color:white;
 }
 
 footer{
 	
+}
+
+nav{
+	display: flex;
+	width: 60vw;
+	margin: auto;
+	padding: 2vh 0vw;
+}
+
+#logoNav{
+	width:10.2vw;
+}
+#logo{
+	flex: 1;
+	margin-top: .9vh;
+}
+#topMenu{
+	flex:1;
+	display: flex;
+	justify-content: space-between;
+}
+
+#landing{
+	display: flex;
+	justify-content: space-between;
+	width: 60vw;
+	margin: auto;
+	align-items: center;
+}
+#landingText{
+	flex: 1;
+	font-size: 1.1rem;
+}
+#landingImage{
+	flex: 1;
+}
+#imgApp{
+	height: 78vh;
+	float: right;
+}
+#headerBG{
+	height: 100px;
+	background-image: url(../img/landing_background.png);
+	background-repeat: no-repeat;
+	background-position: center bottom; 
+}
+.menuBtn{
+	font-size: .7rem;
+	font-family: sans-serif;
+	line-height: 3.5rem;
+}
+
+.entrarBtn{
+	color: #5e2ced;
+	background-color: #FFF;
+	border-radius: 3px;
+	padding: 10px 17px;
+	font-weight: bold;
+}
+.btn{
+	border: none;
+	color: white;
+	padding: 15px 34px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 45px 0px;
+	cursor: pointer;
+	background-image: linear-gradient(to right, #9e7dfc, #5e2ced);
 }

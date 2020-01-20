@@ -55,7 +55,7 @@ body{
 header{
 	background:  url(../img/landing_background2.png) center no-repeat, url(../img/landing_background.png) center bottom no-repeat, linear-gradient(to right, #5e2ced, #9e7dfc);
 	background-size: 100vw;
-	height: 100vh;
+	height: 100%;
 	color:white;
 }
 
@@ -109,6 +109,7 @@ h5{
 	display: flex;
 	justify-content: space-between;
 	width: 60vw;
+	height: 100vh;
 	margin: auto;
 	align-items: center;
 }
@@ -165,15 +166,20 @@ h5{
 	color: #8b8b99;
 	font-size: 0.7rem;
 }
-#bg2{
+#appWine_background{
 	background-image: url(../img/appWineDay_background.png);
 	background-position: left top;
 	background-size: 100vw;
 }
-#bg3{
-	background: url(../img/solutions_background_top.png) top left no-repeat;
+#solutions_background{
+	background:  url(../img/solutions_lines.png) top left no-repeat, url(../img/solutions_background.png) top left no-repeat;
 	background-position: left top;
-	background-size: 100vh;
+	background-size: 100vw;
+}
+#FAQ_background{
+	background:  url(../img/FAQ_lines.png) top left no-repeat;
+	background-position: left top;
+	background-size: 100vw;
 }
 
 #solutions{
@@ -294,6 +300,68 @@ h5{
 	border-radius: 50%;
 	margin-right: .4rem;
 }
+
+.dropdown {
+	display: inline-block;
+	position: relative;
+}
+
+.input {
+	display: none;
+}
+
+.submenuOpcoes {
+	height: 33vh;
+	position: absolute;
+	top: 100%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 0;
+	margin: 2px 0 0 0;
+	box-shadow: 0.1rem 1em 15px rgba(80,80,80,.3);
+	background-color: #ffffff;
+	list-style-type: none;
+}
+
+.input + .submenuOpcoes {
+	display: none;
+} 
+
+.input:checked + .submenuOpcoes {
+	display: block;
+} 
+
+.submenuTop{
+	left:-5vw;
+}
+.questions-dd{
+	height: auto;
+	width: 22vw;
+	z-index: 2;
+	left:2vw;
+	background-image: linear-gradient(to right, #5e2ced, #9e7dfc);
+
+}
+
+
+.submenuOpcoes li {
+	padding: 10px 35px;
+	cursor: pointer;
+	margin: 0;
+	width: 15vw;
+}
+
+.submenuOpcoes li:hover a {
+	color: #5e2ced;
+	font-family: 'PoppinsSemiBold';
+}
+
+.submenuOpcoes li a {
+	display: block;
+	font-family: 'Poppins-Regular';
+	font-size: 1rem;
+}
+
 .facebook{
 	background-color: #e8ecf6;
 	color: #858da8;
@@ -319,6 +387,7 @@ h5{
 	font-size: .7rem;
 	font-family: sans-serif;
 	line-height: 3.5rem;
+	cursor: pointer;
 }
 
 .entrarBtn{
@@ -368,3 +437,138 @@ h5{
 	font-size: 1.5rem;
 	line-height: 0px;
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+	
+	nav{
+		width: 90vw;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	#logo{
+		order: 1;
+	}
+
+	#logoNav{
+		width: 60vw;
+	}
+
+	#topMenu{
+		flex: 1;
+	    display: flex;
+	    order: 2;
+	}
+	.menuBtn{
+		padding: 1px .5rem;
+	}
+	#landing{
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 84vw;
+	}
+	#landingText{
+		font-size: .7rem;
+		height: 34vh;
+	}
+	#landingTitle{
+		font-size: 2rem;
+	}
+	#landingImage{
+		text-align: center;
+	}
+	#imgApp{
+		height: 45vh;
+	}
+	#appWineDay{
+	justify-content: center;
+	flex-wrap: wrap;
+	}
+	#imgAppWine img{
+		width: 75vw;
+	}
+	.grid{
+		width: 60vw;
+	}
+	.card{
+		width: 27vw;
+		text-align: center;
+		font-size: .8rem;
+	}
+	.card p{
+		font-size: .6rem;
+	}
+	.articleHeader {
+		width: 60vw;
+		text-align: center;
+		margin: auto;
+	}
+	.articleHeader h3{
+		font-size: 1rem;
+		margin:5rem auto 0px auto;
+	}
+	.articleHeader p{
+		font-size: .7rem;
+		width: auto;
+	}
+	#solutions_Iphone{
+		margin: auto;
+	}
+	#gridFAQ{
+		width: auto;
+		flex-wrap: wrap;
+		margin-top: 3rem;
+	}
+	#innerFAQ{
+		width: auto;
+		height: 40vh;
+		margin-top: 0rem;
+	}
+	.question{
+		width: 49vw;
+	}
+	#imgFAQ{
+		margin: auto;
+	}
+	#container{
+		width: auto;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	#aboutUs{
+		width: 60vw;
+	}
+	#aboutUs .logo{
+		width: 60vw;
+	}
+	#imgAboutUs{
+		width: 60vw;
+	}
+	#container #aboutUs p{
+		width: 60vw;
+		font-size: 1rem;
+	}
+	#container div{
+		width: 60vw;
+	}
+	#socialMedias{
+		font-size: 1.5rem;
+	}
+	#socialMedias span{
+		font-size: 1.5rem;
+	}
+	ul li{
+		font-size: .95rem;
+	}
+	#copyright p{
+		font-size: .5rem;
+	}
+	#copyright{
+		text-align: center;
+	}
+	#copyright #termos{
+		float: none;
+	}
+}
+

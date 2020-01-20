@@ -18,7 +18,24 @@
 					<a href="#" class="menuBtn">Home</a>
 					<a href="#" class="menuBtn">Clientes</a>
 					<a href="#" class="menuBtn">Cases</a>
-					<a href="#" class="menuBtn">Blog</a>
+					<label class="dropdown">
+
+						<div class="menuBtn">
+							Blog
+						</div>
+
+						<input type="checkbox" class="input" id="test">
+
+						<ul class="submenuOpcoes submenuTop">
+							<li><a href="">Últimas do Blog</a></li>        
+							<li><a href="">Tecnologia</a></li>
+							<li><a href="">Design</a></li>
+							<li><a href="">Desenvolvimento</a></li>
+							<li><a href="">Softwares</a></li>
+							<li><a href="">Ver todas</a></li>	
+						</ul>
+
+					</label>
 					<a href="#" class="menuBtn">Contato</a>
 					<a href="#" class="menuBtn"><span class="entrarBtn">Entrar</span></a>
 				</div>
@@ -37,7 +54,7 @@
 
 		</header>
 		<main>
-		<div id="bg2">
+		<div id="appWine_background">
 			<article id="appWineDay">
 				<div id="text">
 					<h3 id="title">App Wine Day Resort Edition 2020</h3>
@@ -49,13 +66,13 @@
 				</div>
 			</article>
 		</div>
-		<div id="bg3">
+		<div id="solutions_background">
 			<article id="solutions">
 				<div class="articleHeader">
 					<h3>Nós temos todas as soluções que precisa!</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
 				</div>
-				<div>
+				<div id="solutions_Iphone">
 					<img id="imgApp" src="img/GrupoW_Iphone.png" alt="IphoneX Solutions">
 				</div>
 				<div class="grid">
@@ -85,32 +102,66 @@
 				</div>
 			</article>
 		</div>
-			<article id="FAQs">
-				<div class="articleHeader">
-					<h3>Ainda com dúvidas sobre nossos serviços?</h3>
-					<p>Cumque adipisci anim quisque provident posuere blandit accumsan delectus quam quos interdum sociosqu.</p>
-				</div>
-
-				<div id="gridFAQ" class="grid">
-
-					<div id="innerFAQ">
-
-						<div class="question"><span class="iconify" data-icon="simple-line-icons:paper-plane" data-inline="false"></span> Dúvida Um?</div>
-
-						<div class="question"><span class="iconify" data-icon="simple-line-icons:support" data-inline="false"></span> Dúvida Dois?</div>
-
-						<div class="question"><span class="iconify" data-icon="simple-line-icons:cup" data-inline="false"></span> Dúvida Três?</div>
-
-						<div class="question"><span class="iconify" data-icon="simple-line-icons:layers" data-inline="false"></span> Dúvida Quatro?</div>
-						
-					</div>				
-
-					<div id="imgFAQ">
-						<img id="imgApp" src="img/FAQ_Iphone.png" alt="IphoneX FAQ's">
+			<div id="FAQ_background">
+				<article id="FAQs">
+					<div class="articleHeader">
+						<h3>Ainda com dúvidas sobre nossos serviços?</h3>
+						<p>Cumque adipisci anim quisque provident posuere blandit accumsan delectus quam quos interdum sociosqu.</p>
 					</div>
 
-				</div>
-			</article>
+					<div id="gridFAQ" class="grid">
+
+						<div id="innerFAQ">
+
+							<label class="dropdown">
+
+								<div class="question"><span class="iconify" data-icon="simple-line-icons:paper-plane" data-inline="false"></span> Dúvida Um?</div>
+
+								<input type="checkbox" class="input" id="test">
+
+								<p class="submenuOpcoes questions-dd">Non sit hymenaeos error laoreet mollit architecto natoque aenean et, cum nemo, nesciunt animi laoreet phasellus ea laboriosam aenean nihil fringilla reprehenderit similique.</li>
+								</p>
+
+							</label>
+							<label class="dropdown">
+
+								<div class="question"><span class="iconify" data-icon="simple-line-icons:support" data-inline="false"></span> Dúvida Dois?</div>
+
+								<input type="checkbox" class="input" id="test">
+
+								<p class="submenuOpcoes questions-dd">Non sit hymenaeos error laoreet mollit architecto natoque aenean et, cum nemo, nesciunt animi laoreet phasellus ea laboriosam aenean nihil fringilla reprehenderit similique.</li>
+								</p>
+
+							</label>
+							<label class="dropdown">
+
+								<div class="question"><span class="iconify" data-icon="simple-line-icons:cup" data-inline="false"></span> Dúvida Três?</div>
+
+								<input type="checkbox" class="input" id="test">
+
+								<p class="submenuOpcoes questions-dd">Non sit hymenaeos error laoreet mollit architecto natoque aenean et, cum nemo, nesciunt animi laoreet phasellus ea laboriosam aenean nihil fringilla reprehenderit similique.</li>
+								</p>
+
+							</label>
+							<label class="dropdown">
+
+								<div class="question"><span class="iconify" data-icon="simple-line-icons:layers" data-inline="false"></span> Dúvida Quatro?</div>
+								<input type="checkbox" class="input" id="test">
+
+								<p class="submenuOpcoes questions-dd">Non sit hymenaeos error laoreet mollit architecto natoque aenean et, cum nemo, nesciunt animi laoreet phasellus ea laboriosam aenean nihil fringilla reprehenderit similique.</li>
+								</p>
+
+							</label>
+
+						</div>				
+
+						<div id="imgFAQ">
+							<img id="imgApp" src="img/FAQ_Iphone.png" alt="IphoneX FAQ's">
+						</div>
+
+					</div>
+				</article>
+			</div>
 		</main>
 		
 		<footer>

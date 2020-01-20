@@ -1,3 +1,42 @@
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: PoppinsSemiBold;
+  src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+	font-family: 'ElegantIcons';
+	src:url('../fonts/ElegantIcons.eot');
+	src:url('../fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ElegantIcons.woff') format('woff'),
+		url('../fonts/ElegantIcons.ttf') format('truetype'),
+		url('../fonts/ElegantIcons.svg#ElegantIcons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'ElegantIcons';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
 *{
 	padding: 0px;
 	margin: 0px;
@@ -14,13 +53,17 @@ body{
 }
 
 header{
-	background-image: linear-gradient(to right, #5e2ced, #9e7dfc);
+	background:  url(../img/landing_background2.png) center no-repeat, url(../img/landing_background.png) center bottom no-repeat, linear-gradient(to right, #5e2ced, #9e7dfc);
+	background-size: 100vw;
 	height: 100vh;
 	color:white;
 }
 
 footer{
-	
+	min-height: 50vh;
+	color: #677294;
+	background-color: #f8f8f8;
+	border: 1px solid #e9ecf3;
 }
 
 nav{
@@ -28,6 +71,25 @@ nav{
 	width: 60vw;
 	margin: auto;
 	padding: 2vh 0vw;
+}
+
+ul{
+	text-decoration: none;
+	list-style: none;
+}
+ul li a{
+	color: #677294;
+	font-size: .7rem;
+}
+
+ul li{
+	margin-bottom: 1rem;
+}
+h5{
+	font-family: 'PoppinsSemiBold';
+	font-size: 1rem;
+	margin-bottom: 2.5rem;
+	color: #3f4451;
 }
 
 #logoNav{
@@ -50,9 +112,19 @@ nav{
 	margin: auto;
 	align-items: center;
 }
+
+#landing p{
+	font-family: 'PoppinsRegular';
+	line-height: 1.7rem;
+	margin-top:0.8rem;
+}
 #landingText{
 	flex: 1;
-	font-size: 1.1rem;
+}
+#landingTitle{
+	font-family:'PoppinsBold'; 
+	font-size: 2.5rem;
+	line-height: 3rem;
 }
 #landingImage{
 	flex: 1;
@@ -61,12 +133,188 @@ nav{
 	height: 78vh;
 	float: right;
 }
-#headerBG{
-	height: 100px;
-	background-image: url(../img/landing_background.png);
-	background-repeat: no-repeat;
-	background-position: center bottom; 
+
+#appWineDay{
+	
+	display: flex;
+	justify-content: space-between;
+	width: 60vw;
+	margin: auto;
+	align-items: center;
 }
+#text{
+	flex:1;
+}
+#imgAppWine{
+	flex: 1;
+	width: 37vw;
+}
+
+#imgAppWine img{
+	position: relative;
+	left: 4vw;
+	width: 45vw;
+}
+#title{
+	font-family: 'PoppinsSemiBold';
+	color: #282835;
+	font-size: 2.2rem;
+}
+#innerText{
+	font-family: 'PoppinsRegular';
+	color: #8b8b99;
+	font-size: 0.7rem;
+}
+#bg2{
+	background-image: url(../img/appWineDay_background.png);
+	background-position: left top;
+	background-size: 100vw;
+}
+#bg3{
+	background: url(../img/solutions_background_top.png) top left no-repeat;
+	background-position: left top;
+	background-size: 100vh;
+}
+
+#solutions{
+	display: flex;
+	justify-content: space-between;
+	width: 60vw;
+	margin: auto;
+	align-items: center;
+	flex-wrap: wrap;
+	
+}
+#container{
+	width: 60vw;
+	display: flex;
+	margin:auto;
+	margin-top: 5rem;
+}
+
+#container div{
+	width: 20vw;
+}
+
+#container #aboutUs p{
+	width: 15vw;
+	font-size: .7rem;
+	margin: 1.5rem 0px;
+}
+#imgAboutUs{
+	width: 15vw;
+}
+#menus{
+	display: flex;
+}
+#menuFooter{
+
+}
+#solucoesWFooter{
+
+}
+#aboutUs p{
+	font-family: PoppinsRegular;
+}
+
+#aboutUs .logo{
+	width: 8vw;
+}
+#copyright{
+	width: 60vw;
+	margin: 2vh auto;
+	font-size: .8rem;
+}
+
+#copyright span{
+	color: #5e2ced;
+}
+
+#copyright p{
+	display: inline-block;
+}
+#copyright a{
+	display: inline-block;
+	color: #929ab2;
+	margin: 0px;
+	padding: 0px;
+}
+#copyright #termos{
+	float: right;
+}
+.articleHeader{
+	width: 60vw;
+	text-align: center;
+	margin: auto;
+}
+.articleHeader h3{
+	font-family: 'PoppinsSemiBold';
+	font-size: 1.4rem;
+}
+.articleHeader p{
+	font-family: 'PoppinsRegular';
+	width: 30vw;
+	color:#8b8b99;
+	font-size: .8rem;
+	margin: auto;
+}
+.grid{
+	width: 40vw;
+	height: 60vh;
+	display: flex;
+	justify-content: space-between;
+	align-content: space-between;
+	flex-wrap: wrap;
+}
+#gridFAQ{
+	width: 60vw;
+	flex-wrap: nowrap;
+	margin-top: 3rem;
+}
+#FAQs{
+	height: 100vh;
+	width: 60vw;
+	margin: auto;
+	text-align: center;
+}
+#innerFAQ{
+	width: 25vw;
+	height: 50vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	margin-top: 4rem;
+}
+#socialMedias{
+	margin-bottom: 2.5rem;
+	font-size: 1.5rem;
+}
+#socialMedias span{
+	padding: 0.8rem;
+	border-radius: 50%;
+	margin-right: .4rem;
+}
+.facebook{
+	background-color: #e8ecf6;
+	color: #858da8;
+}
+.instagram{
+	background-color: #5e2ced;
+	color: #FFF;
+}
+.question{
+	width: 22vw;
+	padding: 20px;
+	background-color: #FFF;
+	box-shadow: .1rem .6em 1em #EEE;
+	color: #8b8b99;
+	text-align: left;
+}
+
+.iconify{
+	color: #5e2ced;
+}
+
 .menuBtn{
 	font-size: .7rem;
 	font-family: sans-serif;
@@ -79,6 +327,7 @@ nav{
 	border-radius: 3px;
 	padding: 10px 17px;
 	font-weight: bold;
+	box-shadow: 0.1rem 1em 15px rgba(80,80,80,.3);
 }
 .btn{
 	border: none;
@@ -87,8 +336,35 @@ nav{
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 13px;
 	margin: 45px 0px;
 	cursor: pointer;
 	background-image: linear-gradient(to right, #9e7dfc, #5e2ced);
+	box-shadow: 0.1rem 1em 15px rgba(80,80,80,.3);
+	text-transform: uppercase;
+}
+.reverseLinearBtn{
+	background-image: linear-gradient(to left, #9e7dfc, #5e2ced);
+}
+.card{
+	width: 17vw;
+}
+
+.card h4{
+	margin: 1.5em 0em;
+	color: #282835;
+	font-family: 'PoppinsSemiBold';
+}
+
+.card p{
+	color: #8b8b99;
+	font-family: 'PoppinsRegular';
+	font-size: 0.9rem;
+}
+
+.icons{
+	color: #5e2ced;
+	padding: .7rem;
+	font-size: 1.5rem;
+	line-height: 0px;
 }

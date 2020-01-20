@@ -5,6 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="themify-icons.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<header>
@@ -24,7 +25,7 @@
 			</nav>
 			<div id="landing">
 				<div id="landingText">
-					<h2>App corretora Pasqualotto&amp;GT</h2>
+					<h2 id="landingTitle">App corretora Pasqualotto&amp;GT</h2>
 					<p>Ut enim ad minima veniam, quis nostrum exercitation ullamco labori nisi ut aliquid ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
 					<button class="btn">Ver Projeto</button>
 				</div>
@@ -33,111 +34,134 @@
 					<img id="imgApp" src="img/mockupLanding.png" alt="App Pasqualotto&GT" height="78vh">
 				</div>
 			</div>
-			<div id="headerBG"></div>
+
 		</header>
 		<main>
-			<article id="AppWineDay">
-				<img src="" alt="IphoneX">
-
-				<h3>App Wine Day Resort Edition 2020</h3>
-				<p>Desmistificar o mundo dos vinhos, surpreender os paladares mais aguçados e conquistar os menos experientes. É com essa proposta que a Decanter Balneário Camboriú promove a sexta edição do Decanter Wine Day, evento que já se consagrou no mundo do vinho e que atrai apreciadores da bebida de todo o Brasil.</p>
-
-				<button class="btn">Ver Projeto</button>
+		<div id="bg2">
+			<article id="appWineDay">
+				<div id="text">
+					<h3 id="title">App Wine Day Resort Edition 2020</h3>
+					<p id="innerText">Desmistificar o mundo dos vinhos, surpreender os paladares mais aguçados e conquistar os menos experientes. É com essa proposta que a Decanter Balneário Camboriú promove a sexta edição do Decanter Wine Day, evento que já se consagrou no mundo do vinho e que atrai apreciadores da bebida de todo o Brasil.</p>
+					<button class="btn reverseLinearBtn">Ver Projeto</button>
+				</div>
+				<div id="imgAppWine">
+					<img src="img/appWineDay.png" alt="App Wine Day">
+				</div>
 			</article>
-			<article id="Solutions">
-				<div>
+		</div>
+		<div id="bg3">
+			<article id="solutions">
+				<div class="articleHeader">
 					<h3>Nós temos todas as soluções que precisa!</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
 				</div>
 				<div>
-					<img src="" alt="IphoneX Solutions">
+					<img id="imgApp" src="img/GrupoW_Iphone.png" alt="IphoneX Solutions">
 				</div>
-				<div>
-					<div>
-						<div class="glyph">
-							<div aria-hidden="true" data-icon="&#x6b;"></div>
-						</div>
+				<div class="grid">
+					<div class="card">
+						<button><div class="icons" aria-hidden="true" data-icon="&#xe0e9;"></div></button>
 						<h4>Web Design Responsivo</h4>
 						<p>In pariatur conubia exercitationem Cillum, rhoncus! Aspernatur hendrerit! Morbi pariatur tempora   platea volutpat?</p>
 					</div>
-					<div>
-						<button>&#x6c;</button>
+					<div class="card">
+						
+						<button><div class="icons" aria-hidden="true" data-icon="&#x6c;"></div></button>
 						<h4>Projetos Customizados</h4>
 						<p>In pariatur conubia exercitationem Cillum, rhoncus! Aspernatur hendrerit! Morbi pariatur tempora   platea volutpat?</p>
 					</div>
-					<div>
-						<button>&#xe06e;</button>
+					<div class="card">
+						
+						<button><div class="icons" aria-hidden="true" data-icon="&#xe06e;"></div></button>
 						<h4>Segurança na Web</h4>
 						<p>In pariatur conubia exercitationem Cillum, rhoncus! Aspernatur hendrerit! Morbi pariatur tempora   platea volutpat?</p>
 					</div>
-					<div>
-						<button>&#xe00d;</button>
+					<div class="card">
+						
+						<button><div class="icons" aria-hidden="true" data-icon="&#xe00d;"></div></button>
 						<h4>Software/Plataforma Web</h4>
 						<p>In pariatur conubia exercitationem Cillum, rhoncus! Aspernatur hendrerit! Morbi pariatur tempora   platea volutpat?</p>
 					</div>
 				</div>
 			</article>
+		</div>
 			<article id="FAQs">
-				<div>
+				<div class="articleHeader">
 					<h3>Ainda com dúvidas sobre nossos serviços?</h3>
 					<p>Cumque adipisci anim quisque provident posuere blandit accumsan delectus quam quos interdum sociosqu.</p>
 				</div>
 
-				<div>
-					<img src="" alt="IphoneX FAQ's">
-				</div>
+				<div id="gridFAQ" class="grid">
 
-				<div>
-					
-					Dúvida Um?
+					<div id="innerFAQ">
 
-					Dúvida Dois?
-					
-					Dúvida Três?
-					
-					Dúvida Quatro?
-					
+						<div class="question"><span class="iconify" data-icon="simple-line-icons:paper-plane" data-inline="false"></span> Dúvida Um?</div>
+
+						<div class="question"><span class="iconify" data-icon="simple-line-icons:support" data-inline="false"></span> Dúvida Dois?</div>
+
+						<div class="question"><span class="iconify" data-icon="simple-line-icons:cup" data-inline="false"></span> Dúvida Três?</div>
+
+						<div class="question"><span class="iconify" data-icon="simple-line-icons:layers" data-inline="false"></span> Dúvida Quatro?</div>
+						
+					</div>				
+
+					<div id="imgFAQ">
+						<img id="imgApp" src="img/FAQ_Iphone.png" alt="IphoneX FAQ's">
+					</div>
+
 				</div>
 			</article>
 		</main>
+		
 		<footer>
-			<div>
-				<img src="W-logo.png" alt="GRUPOW - Software para Internet">
-				<p>Desenvolvimento de software para internet e soluções de qualidade para a sua empresa.</p>
-				<img src="img/undraw_finance_0bdk.svg" alt=" " >
-			</div>
-			<div>
-				Menu
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Clientes</a></li>
-					<li><a href="#">Cases</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contato</a></li>
-				</ul>
-			</div>
-			<div>
-				Soluções W
-				<ul>
-					<li><a href="#">Web Design Responsivo</a></li>
-					<li><a href="#">Suporte para Software</a></li>
-					<li><a href="#">Desenvolvimento</a></li>
-					<li><a href="#">Segurança na Web</a></li>
-					<li><a href="#">SoftWare/Plataforma Web</a></li>
-					<li><a href="#">Ver todas soluções</a></li>
-				</ul>
-			</div>
-			<div> 
-				Siga o W nas redes Sociais
+			<div id="container">
+				<div id="aboutUs">
+					<img class="logo" src="img/grupow_logo.png" alt="GRUPOW - Software para Internet">
+					<p>Desenvolvimento de software para internet e soluções de qualidade para sua empresa.</p>
+					<img id="imgAboutUs" src="img/undraw_finance_0bdk.svg" alt=" " >
+				</div>
+				<div id="menus">
+					<div id="menuFooter">
+						<h5>Menu</h5>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Clientes</a></li>
+							<li><a href="#">Cases</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Contato</a></li>
+						</ul>
+					</div>
+					<div id="solucoesWFooter">
+						<h5>Soluções W</h5>
+						<ul>
+							<li><a href="#">Web Design Responsivo</a></li>
+							<li><a href="#">Suporte para Software</a></li>
+							<li><a href="#">Desenvolvimento</a></li>
+							<li><a href="#">Segurança na Web</a></li>
+							<li><a href="#">SoftWare/Plataforma Web</a></li>
+							<li><a href="#">Ver todas soluções</a></li>
+						</ul>
+					</div>
+				</div>
+				<div> 
+					<h5>Siga o W nas redes Sociais</h5>
 
-				<ul>
-					<li></li>
+					<ul>
+						<li id="socialMedias">
+							<a href="#"><span class="ti-facebook facebook"></span></a>
+							<a href="#"><span class="ti-instagram instagram"></span></a>
+						</li>
+						<li>Email:<span> atendimento@grupow.com.br</span></li>
+						<li>Telefone: 47 3056.7670<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11 3090.9202</li>
+					</ul>
+				</div>
 
-					<li>Email:<a href=""> atendimento@grupow.com.br</a></li>
-					<li>Telefone: 47 3056.7670<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11 3090.9202</li>
-				</ul>
+
 			</div>
+			<div id="copyright"><p>Todos os direitos reservados -<span> GrupoW Softwares para Internet</span></p>
+					 <p id="termos"><a href="#">Termos de Uso</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Privacidade</p></a></div>
 		</footer>
 	</body>
+	<script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
 </html>
